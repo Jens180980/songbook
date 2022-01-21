@@ -4,7 +4,7 @@ const model = new SongModel()
 
 class SongController {
     constructor() {
-        console.log('Hallojsa');
+        console.log('Instance of Class SongController called');
     }
 
     list = async (req, res) => {

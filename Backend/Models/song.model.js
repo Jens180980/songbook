@@ -7,7 +7,7 @@ class SongModel {
 
     list = (req, res) => {
         return new Promise((resolve, reject) => {
-            const orderBy = req.query.orderBy || s.id
+            const orderBy = req.query.orderBy || 's.id'
             const limit = req.query.limit ? `LIMIT ${req.query.limit}` : ''
             const dir = req.query.dir || 'ASC'
 
